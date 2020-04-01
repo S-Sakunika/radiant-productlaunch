@@ -1,0 +1,435 @@
+/** Base CSS **/
+* {
+  margin: 0;
+  padding: 0; 
+}
+body {
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fffede; 
+}
+h1 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px; 
+}
+p {
+  line-height: 1.8em; 
+}
+a {
+  text-decoration: none;
+  color: #000; 
+}
+ul, li {
+  margin: 0; 
+}
+ul li, li li {
+  list-style: none; 
+}
+img {
+  width: auto;
+  max-width: 100%; 
+}
+
+/** General CSS **/
+.section-container {
+  padding: 20px; 
+  height: 100%;
+}
+.grid-row {
+  display: flex;
+  flex-wrap: wrap; 
+}
+.grid-col-12 {
+  flex: 100%;
+  max-width: 100%; 
+}
+.grid-col-11 {
+  flex: 91.66%;
+  max-width: 91.66%; 
+}
+.grid-col-10 {
+  flex: 83.33%;
+  max-width: 83.33%; 
+}
+.grid-col-9 {
+  flex: 75%;
+  max-width: 75%; 
+}
+.grid-col-8 {
+  flex: 66.66%;
+  max-width: 66.66%; 
+}
+.grid-col-7 {
+  flex: 58.33%;
+  max-width: 58.33%; 
+}
+.grid-col-6 {
+  flex: 50%;
+  max-width: 50%; 
+}
+.grid-col-5 {
+  flex: 41.66%;
+  max-width: 41.66%; 
+}
+.grid-col-4 {
+  flex: 33.33%;
+  max-width: 33.33%; 
+}
+.grid-col-3 {
+  flex: 25%;
+  max-width: 25%; 
+}
+.grid-col-2 {
+  flex: 16.66%;
+  max-width: 16.66%; 
+}
+.grid-col-1 {
+  flex: 8.333%;
+  max-width: 8.333%; 
+}
+#swup {
+  overflow-x: hidden;
+  min-height: 445px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+a.button {
+  background: #000;
+  color: #fadc82;
+  padding: 10px 25px;
+  border-radius: 50px; 
+}
+
+/** Page Top **/
+img.logo {
+  width: 200px; 
+}
+.page-top {
+  padding: 30px 30px 0
+}
+.page-top .mobile-nav-icon, .page-top .mobile-nav-close-icon {
+  display: none;
+}
+
+/** Navigation **/
+.navigation nav {
+  display: block;
+}
+.navigation ul {
+  display: flex;
+  justify-content: flex-end; 
+}
+.navigation li {
+  margin: 0 20px;
+}
+.navigation li a {
+  font-size: 14px;
+  font-weight: 600; 
+}
+
+/** Content **/
+.page-content .content-wrapper {
+  height: 100%;
+  justify-content: flex-end;
+}
+.page-content .section-container {
+  width: 100%;
+}
+.page-content {
+  padding: 0 30px;
+}
+img.floral-bg {
+  width: 50%;
+}
+img.product-img {
+  width: 240px;
+  position: absolute;
+  right: 45%; 
+}
+.page-content .content-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 0; 
+}
+
+/** Home Page **/
+.content-left {
+  display: flex;
+  justify-content: flex-start;
+  position: absolute;
+}
+.home .content-right-inner {
+  width: 480px;
+  text-align: right; 
+}
+
+/** Ingredients Page **/
+.inner-page.content-left {
+  display: flex;
+  justify-content: flex-start; 
+}
+.inner-page .content-right-inner {
+  width: 100%;
+  min-height: 200px;
+  background: #fff;
+  padding: 50px 40px;
+  margin-right: -50px; 
+}
+.inner-page .tabcontent p {
+  padding: 10px 10px 10px 40px; 
+}
+.tabslide {
+  flex: 16.33%;
+  max-width: 16.33%;
+}
+.tabcontent {
+  flex: 80%;
+  max-width: 80%;
+}
+.tabslide {
+  border-right: 1px solid #c3c3c3;
+}
+.inner-page .tablinks {
+  padding: 15px 5px;  
+  border-bottom: 1px solid #c3c3c3;
+  position: relative; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.inner-page .tablinks.active .tabactive-bg {
+  background: #fffede;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  border-radius: 50%;
+}
+.inner-page .tablinks:last-child {
+  border-bottom: none; 
+}
+.inner-page .tablinks img {
+  width: 50px;
+  display: block;
+  margin: 0 auto;
+  position: relative; 
+}
+.inner-page .tablinks span {
+  display: block;
+  margin: 10px auto 0;
+  text-align: center;
+  font-size: 11px;
+  position: relative; 
+}
+
+/** Order Page **/
+.order .content-right-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.countdown-container.hours, .countdown-container.minutes, .countdown-container.seconds {
+  min-width: 90px;
+}
+.countdown {
+  text-transform: uppercase;
+}
+.countdown > div { 
+  display: inline-block; 
+}
+.countdown > div > span {
+  display: block;
+  text-align: center;
+}
+.countdown-container { 
+  margin: 0 3px; 
+}
+.countdown-container .countdown-heading {
+  font-size: 11px;
+  margin: 3px;
+}
+.countdown-container .countdown-value {
+  font-size: 50px;
+  background: #000;
+  padding: 10px;
+  color: #fff;
+  border-radius: 5px;
+}
+
+/** Footer **/
+.footer {
+  padding: 0 30px 30px;
+}
+.social-links {
+  display: flex;
+  justify-content: flex-end;
+}
+.social-links a {
+  width: 30px;
+  margin: 0 10px 0 0; 
+}
+
+/** Swup Transitions **/
+.background-overlay {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #dacad1;
+  opacity: 0.5;
+  z-index: -1;
+  transform: scale(0);
+  transform-origin: right;
+}
+.transition-overlay {
+  transition: 700ms cubic-bezier(.54,.54,0,1);
+  transform: scaleX(0) translateX(0);
+} 
+html.is-leaving .transition-overlay {
+  transform: scaleX(1) translateX(-60%);
+}
+
+.contentload {
+  opacity: 1;
+}
+html.is-animating .contentload {
+  opacity: 1;
+}
+
+.contentslide {
+  transition: 300ms ease-out;
+  transform: translateX(0);
+}
+html.is-animating .contentslide {
+  transform: translateX(150%);
+}
+
+.tabslide {
+  transition: 500ms cubic-bezier(.56,.7,.11,1.01) 100ms;
+  transform: translateX(0);
+}
+html.is-animating .tabslide {
+  transform: translateX(150%);
+}
+
+/** Responsive **/
+@media (max-width: 1024px) {
+  .home .content-right-inner {
+    width: 380px;
+  }
+  img.product-img {
+    right: 50%;
+  }
+  .tabslide {
+    flex: 24%;
+    max-width: 24%;
+  }
+  .tabcontent {
+    flex: 75%;
+    max-width: 75%;
+  }
+}
+@media (max-width: 768px) {
+  #swup {
+    min-height: auto;
+  }
+  .content-left {
+    position: relative;
+    justify-content: center;
+  }
+  img.floral-bg {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+  }
+  img.product-img {
+    position: static;
+  }
+  .page-content .content-right {
+    max-width: 100%;
+    flex: 100%;
+  }
+  .home .content-right-inner {
+    width: 100%;
+  }
+  .social-links {
+    justify-content: center;
+  }
+  .social-links a {
+    margin: 0 5px;
+  }
+  .navigation nav {
+    position: absolute;
+    background: #fff;
+    width: 90%;
+    top: 95px;
+    left: 5%;
+    z-index: 2;
+    box-shadow: 5px 10px 12px 0 #0000000d;
+    display: none;
+  }
+  .navigation nav ul {
+    padding: 20px 20px 10px;
+    flex-direction: column;
+  }
+  .navigation li {
+    text-align: center;
+    padding: 8px;
+  }
+  .navigation li a {
+    display: block;
+  }
+  .navigation li.order {
+    margin: 20px 0;
+  }
+  .navigation {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .page-top .mobile-nav-icon, .page-top .mobile-nav-close-icon {
+    display: block;
+  }
+}
+@media (max-width: 480px) {
+  .inner-page .content-right-inner {
+    flex-direction: column;
+  }
+  .tabslide {
+    flex: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    border-right: none;
+    border-bottom: 1px solid #c3c3c3;
+    margin-bottom: 20px;
+  }
+  .inner-page .tablinks {
+    padding: 15px 20px;
+    border-bottom: none;
+  }
+  .tabcontent {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .inner-page .tabcontent p {
+    padding: 10px;
+  }
+  .countdown-container .countdown-value {
+    font-size: 20px;
+  }
+  .countdown-container.hours, .countdown-container.minutes, .countdown-container.seconds {
+    min-width: 40px;
+  }
+  #swup .section-container {
+    padding: 20px 0;
+  }
+}
